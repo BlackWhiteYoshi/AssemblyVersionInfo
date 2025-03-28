@@ -10,7 +10,7 @@ All it does is generating a the static class *Assembly* in the namespace *Assemb
 
 namespace AssemblyVersionInfo;
 
-public static class Assembly {
+internal static class Assembly {
     public const string NAME = "{{compilation.name}}";
 
     public const string VERSION_MAJOR = "{{compilation.version.Major}}";
