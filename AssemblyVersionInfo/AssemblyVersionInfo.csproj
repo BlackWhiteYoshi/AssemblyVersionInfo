@@ -24,6 +24,8 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 
+    <PackageId>__$(MSBuildProjectName)</PackageId>
+
     <IsRoslynComponent>true</IsRoslynComponent>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <DevelopmentDependency>true</DevelopmentDependency>
@@ -47,10 +49,14 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.13.0" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0" PrivateAssets="all" />
     <PackageReference Include="PolySharp" Version="1.15.0" PrivateAssets="all" />
-
-    <!-- AssemblyVersionInfo.x.x.x.nupkg/analyzers/dotnet/cs/AssemblyVersionInfo.dll -->
-    <Analyzer Include="AssemblyVersionInfo.dll" />
+    <PackageReference Include="AssemblyVersionInfo" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
+
+  <Target Name="_UpdatePackageId" BeforeTargets="$(PackDependsOn)" >
+    <PropertyGroup>
+      <PackageId>$(MSBuildProjectName)</PackageId>
+    </PropertyGroup>
+  </Target>
 
 
   <PropertyGroup>
