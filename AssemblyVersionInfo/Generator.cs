@@ -19,7 +19,7 @@ public sealed class Generator : IIncrementalGenerator {
                     /// <summary>
                     /// This class provides constant strings holding information about the Assembly name and version.
                     /// </summary>
-                    [System.CodeDom.Compiler.GeneratedCodeAttribute("AssemblyVersionInfo", "1.0.0")]
+                    [System.CodeDom.Compiler.GeneratedCodeAttribute("{{Assembly.NAME}}", "{{Assembly.VERSION_MAJOR_MINOR_BUILD}}")]
                     internal static class Assembly {
                         /// <summary>
                         /// The simple name of the assembly.
