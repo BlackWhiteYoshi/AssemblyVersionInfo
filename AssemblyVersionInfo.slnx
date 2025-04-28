@@ -1,0 +1,4 @@
+﻿<Solution>
+  <Project Path="AssemblyVersionInfo/AssemblyVersionInfo.csproj" />
+  <Project Path="AssemblyVersionInfo.Tests/AssemblyVersionInfo.Tests.csproj" />
+</Solution>
