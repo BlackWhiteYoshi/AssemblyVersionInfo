@@ -1,4 +1,4 @@
-﻿# AssemblyVersionInfo
+# AssemblyVersionInfo
 
 AssemblyVersionInfo is a very simple source generator that generates constant strings of your assembly name and version.  
 The intended usage is for the [GeneratedCodeAttribute](https://learn.microsoft.com/en-us//dotnet/api/system.codedom.compiler.generatedcodeattribute).
